@@ -1,0 +1,14 @@
+.container{
+    width: 1190px;
+    margin: 0 auto;
+}
+.banner{
+    width: 690px;
+    height: 458px;
+    background-color: green;
+    margin: 0 10px;
+}
+.banner .china{
+    width: 690px;
+    height: 458px;
+}

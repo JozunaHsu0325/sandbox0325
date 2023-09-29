@@ -1,0 +1,36 @@
+.weatherStyle{
+    height: 438px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: darkcyan;
+}
+.base{
+    margin:20px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0,20px,30px rgba(0, 0, 0, 2);
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700;900&display=swap');
+
+h1{
+    font: 900 40px/1.4 "Noto Sans TC";
+    color: darkgreen;
+
+}
+.choceLocation{
+    display: block;
+    width: 100%;
+    border: none;
+    background: #eee;
+    padding: 10px;
+    border-radius: 99em;
+}
+.cityName{
+    font: 500 40px/1.9 "Noto Sans TC";
+    color: darkcyan;
+    text-align: center;
+    letter-spacing: 2px;
+}
