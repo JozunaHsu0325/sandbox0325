@@ -1,70 +1,38 @@
-.container{
-    width: 1190px;
-    margin: 0 auto;
-}
-.mainContent{
-    margin-top: 10px;
-}
-.mainContent .side-nav{
- width: 190px;
- height: 458px;
- background-color: white;
- position: relative;
+.pageContent {
+    display: flex;
+    height: calc(100vh - 70px );
 
 }
-.mainContent .side-nav li{
-    font-size: 14px;
-    height: 28px;
-    line-height: 28px;
-    padding-left: 16px;
-}
-.mainContent .side-nav li:hover{
-    background-color: #DD302D;
 
-}
-.mainContent .side-nav li:hover >a{
-      color: white;
-}
-.secondMenu{
-    width: 680px;
-    height: 458px;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 190px;
-    padding-left: 20px;
-    display: none;
-}
-.mainContent .side-nav li:hover .secondMenu{
-    display: block;
+.side-nav {
+    width: 1000px;
+    height: 300px;
+
+    margin: auto;
+    display: flex;
 }
 
-
-.secondMenu dl{
-    height: 36px;
-    line-height: 36px;
-}
-.secondMenu dl:first-child{
-    margin-top: 10px;
-}
-
-
-.secondMenu dt{
-    float: left;
-    width: 70px;
-    font-weight: bold;
-    margin-right: 10px;
-}
-.secondMenu dd{
-    float: left;
+.side-nav-item li {
+    border: 1px solid white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px 20px;
+    background-color: GRAY;
+    opacity: 0.7;
 }
 
-.secondMenu dd a{
-padding: 0 10px;
-border-left: 1px solid #666;
+.showTable {
+    width: 700px;
+    height: 450px;
+    
 }
 
+.list-group-item {
+    text-shadow: 0 0 20px black;
+    font-size: 20px;
+    color: whitesmoke;
+    opacity: 1;
+    text-decoration: none;
 
-
-
+}
 

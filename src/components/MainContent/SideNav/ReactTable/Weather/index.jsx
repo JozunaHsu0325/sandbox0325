@@ -6,11 +6,12 @@ function WeatherData() {
   const [feelLike, setFeelLike] = useState(null);
   const [temp_Max, setTemp_Max] = useState(null);
   const [temp_Min, setTemp_Min] = useState(null);
-  const apiKey = 'e57f7ff111eb6b146ede4604be4d12b0';
   const [choceLocation, setChoceLocation] = useState('Taipei');
   const [cityName, setCityName] = useState(null);
   const [weatherIcon, setWeatherIcon] = useState(null);
   const [isLoading, setIsLoading] = useState(false); // 加载状态
+  const apiKey = 'e57f7ff111eb6b146ede4604be4d12b0';
+
 
   useEffect(() => {
     setIsLoading(true); // 在发起请求时设置加载状态为 true
@@ -20,7 +21,6 @@ function WeatherData() {
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setTemperature(data.main.temp);
         setFeelLike(data.main.feels_like);
         setTemp_Max(data.main.temp_max);

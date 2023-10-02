@@ -1,25 +1,24 @@
 import React from 'react'
+import { NavLink, useRoutes } from 'react-router-dom';
 import './index.css'
-import ToDoList from './ReactTable/ToDoList';
-import WeatherData from './ReactTable/Weather';
+import routes from './routes'
+
 export default function SideNav() {
+    const element = useRoutes(routes)
+
     return (
-        <div>
-            <ul className='side-nav leftfix'>
-                <li><a href='#'>ToDoList</a>
-                    <div className=' secondMenu clearfix'>
-                        <ToDoList />
-                    </div>
+        <div className='pageContent'>
+            <div className='side-nav'>
+                <ul className='side-nav-item '>
+                    <li><NavLink className="list-group-item" to="/WeatherData" >Weather</NavLink></li>
+                    <li><NavLink className="list-group-item" to="/RouteList"  >RouteList</NavLink></li>
+                    <li><NavLink className="list-group-item " to="/ToDoList" >ToDoList</NavLink></li>
 
-                </li>
-                <li><a href='#'>天氣預報</a>
-                    <div className='secondMenu clearFix'>
-                        <WeatherData/>
-                    </div>
 
-                </li>
-                
-            </ul>
+                </ul>
+                <div className='showTable'>{element}</div>
+ 
+            </div>
         </div>
     )
 }

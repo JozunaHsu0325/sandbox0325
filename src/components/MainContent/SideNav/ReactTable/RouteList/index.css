@@ -1,0 +1,29 @@
+.routeList{
+    width: 600px;
+    height: 600px;
+    box-sizing: border-box;
+}
+.routeHead{
+    width: 600px;
+    height: 50px;
+    background-color: antiquewhite;
+    display: flex;
+}
+
+.routeDetail{
+ 
+}
+
+.titleTable{
+    background-color: gray;
+    margin-top: 20px;
+}
+
+.dataTable{
+ margin-top: 40px;
+ color: azure;
+}
+
+.newsImage{
+    width: 500px;
+}

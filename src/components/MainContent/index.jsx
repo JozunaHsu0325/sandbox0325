@@ -1,15 +1,12 @@
 import React from 'react'
-import SideOther from './SideOther'
-import Banner from './Banner'
 import SideNav from './SideNav'
+import './index.css'
 
 export default function MainContent() {
     return (
-        <div className='mainContent'>
-            <div className='container clearfix'>
+        <div >
+            <div >
                 <SideNav />
-                <Banner />
-                <SideOther />
             </div>
         </div>
     )

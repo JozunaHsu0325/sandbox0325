@@ -1,5 +1,5 @@
 .weatherStyle{
-    height: 438px;
+    height: 405px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 .base{
     margin:20px auto;
     padding: 20px;
-    width: 400px;
+    width: 450px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 0,20px,30px rgba(0, 0, 0, 2);
